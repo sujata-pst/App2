@@ -1,0 +1,47 @@
+FORMAT: 1A
+HOST: https://127.0.0.1:8000/sales/api
+
+# Stringer
+
+Polls is a simple API allowing consumers to view polls and vote in them.
+
+## Questions Collection [/account]
+
+### List All Questions [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "count": 3713, 
+                "next": "https://127.0.0.1:8000/sales/api/account/?page=2", 
+                "previous": null, 
+                "results": [
+        {
+            "id": 1, 
+            "account_name": "Deutsche Bank North America", 
+            "sic_desc": null, 
+            "phone": "(212) 250-2500", 
+            "glass_door": null, 
+            "asci": null, 
+            "url": "http://www.deutsche-bank.de", 
+            "external_id": "0013000000106UE", 
+            "employee_count": "Over 250 Employees", 
+            "revenue": "Revenue of $100mil - $499mil", 
+            "account_type": "Key Growth Account", 
+            "score": 82, 
+            "score_reason": "Fortify cross-sell to ESP customer", 
+            "logo": "/static/imgs/avatars/buildings/2.jpg", 
+            "industry": null, 
+            "contacts_count": 0, 
+            "contacts_pending_count": 0, 
+            "contacts_pending": [], 
+            "meta_fields": [], 
+            "city": "New York", 
+            "state": "NY", 
+            "country": "United States"
+        }
+                ]
+            }
+        ]
+
